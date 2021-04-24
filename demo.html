@@ -1,0 +1,54 @@
+ <form  id="FORM">
+ <textarea name="TEXT" form="FORM" placeholder="Enter some text" style="width:100% !important;height:300px;resize:none;" id="TEXT"></textarea>
+   
+    <input type="submit" id="gooo">
+  </form>
+
+
+ <script>
+
+      
+      
+      $(document).ready(function(){
+    $("#FORM").submit(function(e){
+        e.preventDefault();
+
+         
+        var form = $(this);
+        var action = form.attr("action");
+        var data = form.serializeArray();
+
+        $.ajax({
+                    url: "https://jamesunderwood.net/VXbj9880i3bcvTGEb6A8/relay.php",
+                    type: 'POST',
+          timeout:0,
+                    contentType: 'application/json',
+                    data: JSON.stringify(getFormData(data)),
+                    success: function(response){
+
+                      
+window.alert(response);
+                      
+                    },
+                    error: function( jqXhr, textStatus, errorThrown ){
+                        console.log( errorThrown );
+                            document.getElementById("loading").style.display = "none";
+
+                    }
+        });
+});
+});
+
+function getFormData(data) {
+   var unindexed_array = data;
+   var indexed_array = {};
+
+   $.map(unindexed_array, function(n, i) {
+    indexed_array[n['name']] = n['value'];
+   });
+
+   return indexed_array;
+}
+
+
+    </script>

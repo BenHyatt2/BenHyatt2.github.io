@@ -1,181 +1,415 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <title>Transparrot</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <title>Product example for Bootstrap</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/product/">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
-    <!-- Custom styles for this template -->
-    <link href="product.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-
-    <nav class="site-header sticky-top py-1">
-      <div class="container d-flex flex-column flex-md-row justify-content-between">
-        <a class="py-2" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-        </a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+      id="ftco-navbar"
+    >
+      <div class="container py-3">
+        <a class="navbar-brand" href="index.html">Transparrot</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
       </div>
     </nav>
+    <!-- END nav -->
 
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-      <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 font-weight-normal">Punny headline</h1>
-        <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
-        <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+    <section class="home-slider js-fullheight owl-carousel bg-white">
+      <div class="slider-item js-fullheight">
+        <div class="overlay"></div>
+        <div class="container">
+          <div
+            class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-around"
+            data-scrollax-parent="true"
+          >
+            <div
+              class="one-third order-md-last img js-fullheight"
+              style="
+                background-image: url(images/twitter-feed-whitehouse-white.png);
+              "
+            >
+              <h3 class="vr">The Most Informative Tweets</h3>
+            </div>
+            <div
+              class="one-forth d-flex js-fullheight align-items-center ftco-animate"
+              data-scrollax=" properties: { translateY: '70%' }"
+            >
+              <div class="text">
+                <h1 class="mb-3">We Love <br />Informative Summaries</h1>
+                <p>
+                  Regardless of where you are, as a student, you need to have
+                  access to the most up to date and informative sources out
+                  there.
+                </p>
+                <p>
+                  <a href="demo.html" class="btn btn-primary px-4 py-3 mt-3"
+                    >Try it out!</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="product-device box-shadow d-none d-md-block"></div>
-      <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
-    </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
+      <div class="slider-item js-fullheight">
+        <div class="overlay"></div>
+        <div class="container">
+          <div
+            class="row d-flex no-gutters slider-text js-fullheight align-items-center justify-content-between"
+            data-scrollax-parent="true"
+          >
+            <div
+              class="one-third order-md-last img js-fullheight"
+              style="background-image: url(images/twitter-feed-fed-white.png)"
+            >
+              <h3 class="vr">Since - 2021</h3>
+            </div>
+            <div
+              class="one-forth d-flex js-fullheight align-items-center ftco-animate"
+              data-scrollax=" properties: { translateY: '70%' }"
+            >
+              <div class="text">
+                <h1 class="mb-4">From Every Source You Need</h1>
+                <p>
+                  Transparrot makes sure to give students the necesarry tools to
+                  understand and learn important news and information from
+                  governmental sources.
+                </p>
+                <p>
+                  <a href="demo.html" class="btn btn-primary px-4 py-3 mt-3"
+                    >Try it out!</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
       </div>
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-dark box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-    </div>
+    </section>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
+    <section
+      class="ftco-section ftco-counter img"
+      id="section-counter"
+      style="background-image: url(images/white-house.jpg)"
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="container">
+        <div class="row d-md-flex align-items-center justify-content-end">
+          <div class="col-lg-10">
+            <div class="row d-md-flex align-items-center">
+              <div
+                class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+              >
+                <div class="block-18">
+                  <div class="text">
+                    <strong class="number" data-number="5000" id="tweets-parsed"
+                      >0</strong
+                    >
+                    <span>Tweets Parsed</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+              >
+                <div class="block-18">
+                  <div class="text">
+                    <strong
+                      class="number"
+                      data-number="3000"
+                      id="characters-parsed"
+                      >40,000</strong
+                    >
+                    <span>Characters Parsed</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+              >
+                <div class="block-18">
+                  <div class="text">
+                    <strong class="number" data-number="3000" id="inputs-parsed"
+                      >0</strong
+                    >
+                    <span>User Inputs Parsed</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md d-flex justify-content-center counter-wrap ftco-animate"
+              >
+                <div class="block-18">
+                  <div class="text">
+                    <strong
+                      class="number"
+                      data-number="8000"
+                      id="summaries-made"
+                      >0</strong
+                    >
+                    <span>Summaries Made</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="bg-dark box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
       </div>
-      <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
+    </section>
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate">
+            <h2 class="mb-4">Our Team</h2>
+            <p>From all reaches of the U.S. a team is formed.</p>
+          </div>
         </div>
-        <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="staff">
+              <div
+                class="img"
+                style="background-image: url(images/team-1.jpg)"
+              ></div>
+              <div class="text px-4 pt-4">
+                <h3>John Wilson</h3>
+                <span class="position mb-2">Copywriter & Video Editor</span>
+                <div class="faded">
+                  <p>
+                    I am an ambitious workaholic, but apart from that, pretty
+                    simple person.
+                  </p>
+                  <ul class="ftco-social d-flex">
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-twitter"></span></a>
+                    </li>
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-facebook"></span></a>
+                    </li>
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-google-plus"></span></a>
+                    </li>
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-instagram"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="staff">
+              <div
+                class="img"
+                style="background-image: url(images/Adam_linkedin.jpg)"
+              ></div>
+              <div class="text px-4 pt-4">
+                <h3>Adam Gluck</h3>
+                <span class="position mb-2">Developer</span>
+                <div class="faded">
+                  <p>Just your avid developer.</p>
+                  <ul class="ftco-social d-flex">
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-twitter"></span></a>
+                    </li>
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-facebook"></span></a>
+                    </li>
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-google-plus"></span></a>
+                    </li>
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-instagram"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="staff">
+              <div
+                class="img"
+                style="background-image: url(images/sung-jae_linkedin.jpg)"
+              ></div>
+              <div class="text px-4 pt-4">
+                <h3>Sung Jae Bae</h3>
+                <span class="position mb-2">Designer & Developer</span>
+                <div class="faded">
+                  <p>
+                    Developer and Designer with an interest in building
+                    transformative products.
+                  </p>
+                  <ul class="ftco-social d-flex">
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-twitter"></span></a>
+                    </li>
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-facebook"></span></a>
+                    </li>
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-google-plus"></span></a>
+                    </li>
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-instagram"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="staff">
+              <div
+                class="img"
+                style="background-image: url(images/team-4.jpg)"
+              ></div>
+              <div class="text px-4 pt-4">
+                <h3>David Smith</h3>
+                <span class="position mb-2">Developer</span>
+                <div class="faded">
+                  <p>
+                    I am an ambitious workaholic, but apart from that, pretty
+                    simple person.
+                  </p>
+                  <ul class="ftco-social d-flex">
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-twitter"></span></a>
+                    </li>
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-facebook"></span></a>
+                    </li>
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-google-plus"></span></a>
+                    </li>
+                    <li class="ftco-animate">
+                      <a href="#"><span class="icon-instagram"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Transparrot</h2>
+              <p>
+                Get Information. <br />
+                <strong>Faster</strong> and <strong>Better.</strong>
+              </p>
+              <ul
+                class="ftco-footer-social list-unstyled float-md-left float-lft mt-3"
+              >
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-    </div>
-
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
-        </div>
-        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-    </div>
-
-    <footer class="container py-5">
-      <div class="row">
-        <div class="col-12 col-md">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-          <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Features</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Cool stuff</a></li>
-            <li><a class="text-muted" href="#">Random feature</a></li>
-            <li><a class="text-muted" href="#">Team feature</a></li>
-            <li><a class="text-muted" href="#">Stuff for developers</a></li>
-            <li><a class="text-muted" href="#">Another one</a></li>
-            <li><a class="text-muted" href="#">Last time</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Resource</a></li>
-            <li><a class="text-muted" href="#">Resource name</a></li>
-            <li><a class="text-muted" href="#">Another resource</a></li>
-            <li><a class="text-muted" href="#">Final resource</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Business</a></li>
-            <li><a class="text-muted" href="#">Education</a></li>
-            <li><a class="text-muted" href="#">Government</a></li>
-            <li><a class="text-muted" href="#">Gaming</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>About</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Team</a></li>
-            <li><a class="text-muted" href="#">Locations</a></li>
-            <li><a class="text-muted" href="#">Privacy</a></li>
-            <li><a class="text-muted" href="#">Terms</a></li>
-          </ul>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved | This Site Was Made For With
+              <i class="icon-heart" aria-hidden="true"></i> by
+              <a href="https://colorlib.com" target="_blank">Transparrot</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
         </div>
       </div>
     </footer>
 
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/vendor/holder.min.js"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/info.js"></script>
   </body>
 </html>

@@ -1,56 +1,154 @@
-        <script src="/jquery.min.js"></script>       
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="/jquery.min.js"></script>
 
-<form  id="FORM">
- <textarea name="TEXT" form="FORM" placeholder="Enter some text" style="width:100% !important;height:300px;resize:none;" id="TEXT"></textarea>
-   
-    <input type="submit" id="gooo">
-  </form>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
 
- <script>
+    <title>DEMO</title>
+    <link href="/bootstrap.min.css" rel="stylesheet" />
+    <link href="/product.css" rel="stylesheet" />
 
-      
-      
-      $(document).ready(function(){
-    $("#FORM").submit(function(e){
-        e.preventDefault();
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
 
-         
-        var form = $(this);
-        var action = form.attr("action");
-        var data = form.serializeArray();
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
 
-        $.ajax({
-                    url: "https://jamesunderwood.net/VXbj9880i3bcvTGEb6A8/relay.php",
-                    type: 'POST',
-          timeout:0,
-                    contentType: 'application/json',
-                    data: JSON.stringify(getFormData(data)),
-                    success: function(response){
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
-                      
-window.alert(response);
-                      
-                    },
-                    error: function( jqXhr, textStatus, errorThrown ){
-                        console.log( errorThrown );
-                            document.getElementById("loading").style.display = "none";
+    <link rel="stylesheet" href="css/aos.css" />
 
-                    }
-        });
-});
-});
+    <link rel="stylesheet" href="css/ionicons.min.css" />
 
-function getFormData(data) {
-   var unindexed_array = data;
-   var indexed_array = {};
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-   $.map(unindexed_array, function(n, i) {
-    indexed_array[n['name']] = n['value'];
-   });
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+      id="ftco-navbar"
+    >
+      <div class="container py-3">
+        <a class="navbar-brand" href="index.html">Transparrot</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
+      </div>
+    </nav>
 
-   return indexed_array;
-}
+    <div
+      class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"
+    >
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1>Try it out</h1>
+        <p>Enter some text.</p>
 
+        <form id="FORM">
+          <textarea
+            required
+            minlength="20"
+            maxlength="2000"
+            name="TEXT"
+            form="FORM"
+            placeholder="Paste article"
+            style="
+              width: 100% !important;
+              height: 300px;
+              resize: none;
+              padding: 0;
+            "
+            id="TEXT"
+          >
+Today, President Joseph R. Biden, Jr. declared that a major disaster exists in the Commonwealth of Kentucky and ordered Federal assistance to supplement commonwealth and local recovery efforts in the areas affected by severe storms, flooding, landslides, and mudslides from February 27 to March 14, 2021.
 
-    </script>
+The President’s action makes Federal funding available to affected individuals in the counties of Breathitt, Clay, Estill, Floyd, Johnson, Lee, Magoffin, Martin, and Powell.
+
+Assistance can include grants for temporary housing and home repairs, low-cost loans to cover uninsured property losses, and other programs to help individuals and business owners recover from the effects of the disaster.
+
+Federal funding is also available to commonwealth and eligible local governments and certain private nonprofit organizations on a cost-sharing basis for emergency work and the repair or replacement of facilities damaged by the severe storms, flooding, landslides, and mudslides in the counties of Boyd, Breathitt, Carter, Casey, Cumberland, Elliott, Floyd, Franklin, Jackson, Johnson, Knott, Knox, Lawrence, Lee, Lincoln, Magoffin, Marion, Martin, Mason, Morgan, Ohio, Pike, Powell, Rockcastle, and Wolf.
+
+Lastly, Federal funding is available on a cost-sharing basis for hazard mitigation measures for the entire commonwealth.
+
+Robert J. Fenton, Senior Official Performing the Duties of the Administrator, Federal Emergency Management Agency (FEMA), Department of Homeland Security, named John Brogan as the Federal Coordinating Officer for Federal recovery operations in the affected areas. 
+
+Additional designations may be made at a later date if requested by the commonwealth and warranted by the results of further damage assessments.
+
+Residents and business owners who sustained losses in the designated counties can begin applying for assistance by registering online at http://www.DisasterAssistance.gov or by calling 1-800-621-FEMA(3362) or 1-800-462-7585 (TTY) for the hearing and speech</textarea
+          >
+          <input
+            style="width: 100%"
+            type="password"
+            name="passcode"
+            placeholder="Passcode"
+            required
+          />
+          <input type="submit" id="gooo" value="Go!" style="width: 100%" />
+        </form>
+        <div id="REsponse">
+          <p id="resssponse"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  $(document).ready(function () {
+    $("#FORM").submit(function (e) {
+      e.preventDefault();
+
+      $("#gooo").attr("disabled", true);
+      var form = $(this);
+      var action = form.attr("action");
+      var data = form.serializeArray();
+
+      $.ajax({
+        url: "https://jamesunderwood.net/VXbj9880i3bcvTGEb6A8/relay.php",
+        type: "POST",
+        timeout: 0,
+        contentType: "application/json",
+        data: JSON.stringify(getFormData(data)),
+        success: function (response) {
+          $("#gooo").attr("disabled", false);
+
+          $("#resssponse").html(response);
+        },
+        error: function (jqXhr, textStatus, errorThrown) {
+          console.log(errorThrown);
+          document.getElementById("loading").style.display = "none";
+        },
+      });
+    });
+  });
+
+  function getFormData(data) {
+    var unindexed_array = data;
+    var indexed_array = {};
+
+    $.map(unindexed_array, function (n, i) {
+      indexed_array[n["name"]] = n["value"];
+    });
+
+    return indexed_array;
+  }
+</script>

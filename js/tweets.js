@@ -3,10 +3,25 @@ $("#user-input").load("demo.html");
 // get all tweets
 let tweets = [
   {
-    title: "hi",
-    summary: "Hello there how are you doing",
-    tweet:
-      "blah blah blah something about the white house and this is quite interesting",
+    title: "Vaccines",
+    summary:
+      "Vaccine Eligibility for 16+ Americans and 200 Million shots. Greenhouse gas emissions cut in half for U.S. by 2030.",
+    tweet: `We’re wrapping up another busy week, where we:
+
+- Opened vaccine eligibility to every American 16+
+- Hit our goal of 200 million shots
+- Announced a new goal to cut U.S. greenhouse gas emissions at least in half by 2030
+- Hosted a historic climate summit with world leaders`,
+  },
+  {
+    title: "Plan",
+    summary:
+      "Rescue plan successfully dealt with crisis. New American Jobs Plan to rebuild infrastructure and allow many Americans to work.",
+    tweet: `The American Rescue Plan helped us deal with the immediate crises of the moment.
+ 
+Now, it’s time to rebuild.
+ 
+The American Jobs Plan will make historic investments in our future and put millions of Americans to work rebuilding our nation’s infrastructure.`,
   },
 ];
 
